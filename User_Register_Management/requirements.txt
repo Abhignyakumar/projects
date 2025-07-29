@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+motor                # MongoDB (async)
+sqlalchemy
+mysql-connector-python
+pydantic
+python-dotenv
+passlib[bcrypt]
+python-jose[cryptography]
+email-validator
+itsdangerous         # for secure token links (used in forget password)

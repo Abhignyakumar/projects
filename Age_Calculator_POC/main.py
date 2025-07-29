@@ -13,7 +13,7 @@ def get_age(data: DOBInput):
     delta = utils.calculate_age(data.date_of_birth)
     return {"years": delta.years, "months": delta.months, "days": delta.days}
 
-@app.post("/age/months", tags=["Age"])
+@app.post("/age/months ", tags=["Age"])
 def get_age_in_months(data: DOBInput):
     return {"age_in_months": utils.age_in_months(data.date_of_birth)}
 
